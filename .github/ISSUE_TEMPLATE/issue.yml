@@ -1,0 +1,24 @@
+name: Issue
+description: Report a problem or propose a change.
+body:
+  - type: input
+    id: summary
+    attributes:
+      label: Summary
+      description: One sentence, in English.
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: What happens, what you expected, and how to reproduce it. All text in this repository is English.
+    validations:
+      required: true
+  - type: checkboxes
+    id: english
+    attributes:
+      label: Language
+      options:
+        - label: This text is in English.
+          required: true
